@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 스캔한 패키지 내부의 클래스 중 Component 애노테이션을 가지오 있는 클래스들을 로딩-->
+    <mvc:annotation-driven/>
+    <!-- 스캔할 bean들이 모여있는 패키지를 지정한다. -->
+    <context:component-scan base-package="me.ljseokd.controller"/>
+</beans>
