@@ -8,4 +8,13 @@
     <mvc:annotation-driven/>
     <!-- 스캔할 bean들이 모여있는 패키지를 지정한다. -->
     <context:component-scan base-package="me.ljseokd.controller"/>
+
+    <!-- Controller의 메서드에서 반환하는 문자열 앞 뒤에 붙힐 경로 정보를 셋팅한다.-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!-- 정적 파일 경로 셋팅 (image sound js css video) -->
+    <mvc:resources mapping="/**" location="/resources/"/>
 </beans>
