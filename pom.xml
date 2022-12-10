@@ -12,7 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>14</maven.compiler.source>
         <maven.compiler.target>14</maven.compiler.target>
-        <org.springframework-version>5.2.3.RELEASE</org.springframework-version>
+        <org.springframework-version>6.0.0</org.springframework-version>
         <javax.servlet-version>4.0.1</javax.servlet-version>
         <javax.servlet.jstl-version>1.2</javax.servlet.jstl-version>
         <javax.servlet.jsp-version>2.3.3</javax.servlet.jsp-version>
